@@ -64,13 +64,15 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 // console.log(`Car 33 is a *car year goes here* *car make goes here* *car model goes here*` );
-console.log(inventory[31]);
+// make an alias
+const c33 = inventory[33-1]; // 33 is id(starts at 1) but index is 32(starts at 0)
+console.log(`Car ${c33.id} is a ${c33.car_year} ${c33.car_make} ${c33.car_model}`);
 
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = 0;
-console.log();
+let lastCar = inventory.length;
+console.log(lastCar);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
