@@ -71,8 +71,11 @@ console.log(`Car ${c33.id} is a ${c33.car_year} ${c33.car_make} ${c33.car_model}
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = inventory.length;
-console.log(lastCar);
+let lastCar = inventory.length -1 ;
+let lastCar_2 = `${inventory[lastCar].car_make} ${inventory[lastCar].car_model}`;
+//console.log(`The last car is a ${inventory[lastCar].car_make} ${inventory[lastCar].car_model}`);
+
+console.log(`The last car is a ${lastCar_2}`);
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
